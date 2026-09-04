@@ -1,1 +1,993 @@
-e
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Services — Linknexa | Premium Link Building & Authority Solutions</title>
+    <meta name="description" content="Explore Linknexa's full suite of premium link acquisition, authority building, digital PR, and SEO intelligence services for enterprise brands." />
+    <link rel="canonical" href="https://linknexa.online/services.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232d1b69' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='40' font-weight='bold' fill='%2300FF41' text-anchor='middle'%3ELX%3C/text%3E%3C/svg%3E" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LINKNEXA"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LINKNEXA');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { background: #ffffff; color: #222; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+
+        :root {
+            --primary: #2d1b69;
+            --primary-light: #3d2980;
+            --accent: #00FF41;
+            --accent-dark: #00d633;
+            --secondary: #FF1493;
+            --secondary-light: #ff4db8;
+            --dark: #0a0a0a;
+            --white: #ffffff;
+        }
+
+        header {
+            background: var(--white);
+            border-bottom: 3px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 6px 20px rgba(45, 27, 105, 0.15);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 24px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 2px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 22px;
+            font-weight: 800;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+        }
+
+        nav { display: flex; gap: 55px; list-style: none; }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--secondary));
+            transition: width 0.35s ease;
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
+        }
+
+        nav a:hover::after { width: 100%; }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--primary);
+            border: none;
+            padding: 13px 34px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.25);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 255, 65, 0.35);
+        }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 6px; }
+        .hamburger span { width: 25px; height: 2.5px; background: var(--primary); border-radius: 2px; }
+
+        .hero {
+            background: linear-gradient(135deg, #f8f5ff 0%, #f0f8ff 50%, #fff8f0 100%);
+            padding: 120px 50px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -150px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 255, 65, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content { position: relative; z-index: 1; }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 64px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.15;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .container { max-width: 1250px; margin: 0 auto; padding: 100px 50px; }
+
+        .section-header { text-align: center; margin-bottom: 75px; }
+
+        .section-header .label {
+            font-size: 11px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+            font-weight: 800;
+            display: block;
+            text-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+        }
+
+        .section-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 52px;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.18;
+            letter-spacing: -1px;
+        }
+
+        .section-header h2 .highlight { color: var(--accent); text-shadow: 0 0 20px rgba(0, 255, 65, 0.25); }
+
+        .section-header p {
+            font-size: 16px;
+            color: #555;
+            max-width: 720px;
+            margin: 0 auto;
+            line-height: 1.85;
+        }
+
+        /* Detailed Service Blocks */
+        .service-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 110px;
+        }
+
+        .service-detail:nth-child(even) .service-visual { order: 2; }
+
+        .service-visual {
+            width: 100%;
+            height: 340px;
+            background: linear-gradient(135deg, rgba(0, 255, 65, 0.1), rgba(255, 20, 147, 0.08));
+            border-radius: 8px;
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 90px;
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.15);
+            color: var(--primary);
+        }
+
+        .service-visual i { background: linear-gradient(135deg, var(--accent), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+        .service-num {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 13px;
+            color: var(--secondary);
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .service-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 34px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .service-content p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.85;
+            margin-bottom: 24px;
+        }
+
+        .service-features { list-style: none; margin-bottom: 28px; }
+
+        .service-features li {
+            font-size: 14px;
+            color: #333;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 500;
+        }
+
+        .service-features li i {
+            color: var(--accent);
+            font-size: 16px;
+            text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+        }
+
+        .service-cta-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .service-cta-link:hover { color: var(--secondary); gap: 13px; }
+
+        /* Process Section */
+        .process-section { margin-bottom: 110px; }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 35px;
+        }
+
+        .process-card {
+            background: var(--white);
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            padding: 45px 35px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 18px rgba(0, 255, 65, 0.12);
+            position: relative;
+        }
+
+        .process-card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 255, 65, 0.2);
+        }
+
+        .process-step {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            color: var(--primary);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.25);
+        }
+
+        .process-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 19px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+
+        .process-card p { font-size: 13px; color: #555; line-height: 1.75; }
+
+        /* Pricing Tiers */
+        .pricing-section { margin-bottom: 110px; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .pricing-card {
+            background: var(--white);
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            padding: 50px 40px;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.12);
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--secondary);
+            background: linear-gradient(135deg, rgba(0, 255, 65, 0.06), rgba(255, 20, 147, 0.04));
+            box-shadow: 0 0 30px rgba(255, 20, 147, 0.2);
+            transform: scale(1.03);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
+            color: var(--white);
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 7px 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(255, 20, 147, 0.4);
+        }
+
+        .pricing-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0, 255, 65, 0.2); }
+        .pricing-card.featured:hover { transform: scale(1.03) translateY(-8px); }
+
+        .pricing-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .pricing-card .tagline { font-size: 13px; color: #777; margin-bottom: 25px; }
+
+        .pricing-card .price {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 42px;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .pricing-card .price span { font-size: 14px; color: #888; font-weight: 500; }
+        .pricing-card .price-note { font-size: 12px; color: #999; margin-bottom: 30px; }
+
+        .pricing-features { list-style: none; margin-bottom: 35px; }
+
+        .pricing-features li {
+            font-size: 14px;
+            color: #444;
+            padding: 11px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing-features li i { color: var(--accent); font-size: 14px; }
+
+        .pricing-btn {
+            display: block;
+            text-align: center;
+            background: var(--white);
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            padding: 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured .pricing-btn {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--primary);
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+        }
+
+        .pricing-btn:hover { background: var(--primary); color: var(--accent); }
+        .pricing-card.featured .pricing-btn:hover { transform: translateY(-3px); }
+
+        /* FAQ */
+        .faq-section { margin-bottom: 110px; max-width: 900px; margin-left: auto; margin-right: auto; }
+
+        .faq-item {
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 30px 35px;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.1);
+        }
+
+        .faq-item h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .faq-item h3 i { color: var(--accent); font-size: 16px; }
+        .faq-item p { font-size: 14px; color: #555; line-height: 1.8; padding-left: 28px; }
+
+        /* CTA Section */
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            padding: 90px 60px;
+            text-align: center;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 40px rgba(0, 255, 65, 0.15);
+        }
+
+        .cta-box::after {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 255, 65, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .cta-box-content { position: relative; z-index: 1; }
+
+        .cta-box h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .cta-box .highlight { color: var(--accent); text-shadow: 0 0 15px rgba(0, 255, 65, 0.4); }
+
+        .cta-box p {
+            font-size: 16px;
+            margin-bottom: 35px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.85;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: var(--primary);
+            border: none;
+            padding: 16px 46px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 0 25px rgba(0, 255, 65, 0.3);
+        }
+
+        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0, 255, 65, 0.4); }
+
+        /* Footer */
+        footer { background: var(--primary); color: var(--white); padding: 85px 50px 35px; }
+        .footer-container { max-width: 1250px; margin: 0 auto; }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 65px;
+            margin-bottom: 55px;
+            padding-bottom: 55px;
+            border-bottom: 2px solid rgba(0, 255, 65, 0.2);
+        }
+
+        .footer-section h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px;
+            margin-bottom: 28px;
+            color: var(--accent);
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        .footer-section ul { list-style: none; }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 13px;
+            line-height: 2.3;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover { color: var(--accent); }
+        .footer-section p { font-size: 13px; line-height: 1.85; color: #ccc; }
+
+        .footer-bottom { text-align: center; color: #999; font-size: 12px; padding-top: 35px; }
+        .footer-bottom a { color: var(--accent); text-decoration: none; }
+
+        .footer-social-links { display: flex; gap: 16px; margin-top: 22px; }
+
+        .footer-social-links a {
+            width: 44px;
+            height: 44px;
+            background: rgba(0, 255, 65, 0.2);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--accent);
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.15);
+        }
+
+        .footer-social-links a:hover { background: var(--accent); color: var(--primary); border-color: var(--accent); }
+
+        /* Floating Contact */
+        .floating-contact { position: fixed; right: 35px; bottom: 35px; z-index: 99; }
+        .contact-options { display: none; flex-direction: column; gap: 12px; margin-bottom: 15px; animation: slideUp 0.3s ease; }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .floating-contact:hover .contact-options { display: flex; }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 255, 65, 0.2);
+            border: none;
+        }
+
+        .float-btn:hover { transform: scale(1.12); }
+        .float-whatsapp { background: #25D366; }
+        .float-email { background: #EA4335; }
+        .float-linkedin { background: #0077B5; }
+
+        .float-main {
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            color: var(--primary);
+            width: 65px;
+            height: 65px;
+            font-size: 24px;
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .hamburger { display: flex; }
+            .hero { padding: 80px 30px; }
+            .hero h1 { font-size: 38px; }
+            .container { padding: 60px 30px; }
+            .section-header h2 { font-size: 32px; }
+            .service-detail { grid-template-columns: 1fr; gap: 35px; }
+            .service-detail:nth-child(even) .service-visual { order: 0; }
+            .pricing-card.featured { transform: scale(1); }
+            .cta-box { padding: 60px 30px; }
+            .cta-box h2 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">LX</div>
+                LINKNEXA
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/923074646927" class="cta-btn">Get Started</a>
+            </div>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Our <span class="highlight">Services</span></h1>
+            <p>Comprehensive link building and authority acquisition solutions engineered for enterprise-grade ranking growth and sustainable market dominance</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Detailed Services -->
+        <section>
+            <div class="section-header">
+                <span class="label">What We Offer</span>
+                <h2>Full-Spectrum <span class="highlight">Authority Solutions</span></h2>
+                <p>Every service is built on 22+ years of link building expertise, contextual precision, and measurable ranking impact</p>
+            </div>
+
+            <div class="service-detail">
+                <div class="service-content">
+                    <span class="service-num">01 — Premium Link Acquisition</span>
+                    <h3>High-Authority Backlink Placement</h3>
+                    <p>We secure curated backlinks from tier-one, niche-relevant publications with verified traffic and authority metrics. Every placement is manually vetted for editorial quality and contextual fit.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> DR/DA 40+ verified domains</li>
+                        <li><i class="fas fa-check-circle"></i> Manual outreach, zero PBNs</li>
+                        <li><i class="fas fa-check-circle"></i> Niche-relevant editorial placement</li>
+                        <li><i class="fas fa-check-circle"></i> Live link verification reporting</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-visual"><i class="fas fa-link"></i></div>
+            </div>
+
+            <div class="service-detail">
+                <div class="service-content">
+                    <span class="service-num">02 — Contextual Placements</span>
+                    <h3>Guest Posts & Niche Edits</h3>
+                    <p>Strategic content placements within established, high-authority articles ensure natural link velocity and long-term ranking stability across your target markets.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Custom-written guest content</li>
+                        <li><i class="fas fa-check-circle"></i> Contextual niche edit insertions</li>
+                        <li><i class="fas fa-check-circle"></i> Topically relevant host sites</li>
+                        <li><i class="fas fa-check-circle"></i> Natural anchor text distribution</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-visual"><i class="fas fa-edit"></i></div>
+            </div>
+
+            <div class="service-detail">
+                <div class="service-content">
+                    <span class="service-num">03 — Authority Architecture</span>
+                    <h3>Link Profile Strategy & Diversification</h3>
+                    <p>We design comprehensive link profiles that balance domain diversity, anchor text ratios, and topical relevance—engineered to withstand algorithm shifts and sustain rankings long-term.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Competitor gap analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Anchor text ratio planning</li>
+                        <li><i class="fas fa-check-circle"></i> Domain diversification strategy</li>
+                        <li><i class="fas fa-check-circle"></i> Algorithm-resilient link profiles</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-visual"><i class="fas fa-network-wired"></i></div>
+            </div>
+
+            <div class="service-detail">
+                <div class="service-content">
+                    <span class="service-num">04 — Digital PR & Brand Authority</span>
+                    <h3>Thought Leadership & PR Placements</h3>
+                    <p>Elevate your brand through press coverage, expert commentary placements, and thought leadership positioning across premium publications your customers actually read.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Journalist & publisher outreach</li>
+                        <li><i class="fas fa-check-circle"></i> Data-driven PR campaigns</li>
+                        <li><i class="fas fa-check-circle"></i> Expert commentary syndication</li>
+                        <li><i class="fas fa-check-circle"></i> Brand mention monitoring</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-visual"><i class="fas fa-star"></i></div>
+            </div>
+
+            <div class="service-detail">
+                <div class="service-content">
+                    <span class="service-num">05 — SEO Audits & Analytics</span>
+                    <h3>Technical & Link Performance Audits</h3>
+                    <p>Comprehensive audits identify technical SEO gaps, toxic backlinks, and untapped opportunities—paired with ongoing performance analytics to track every link's ROI.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Full technical & on-page audit</li>
+                        <li><i class="fas fa-check-circle"></i> Toxic backlink identification</li>
+                        <li><i class="fas fa-check-circle"></i> Monthly performance reporting</li>
+                        <li><i class="fas fa-check-circle"></i> Traffic & ranking attribution</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-visual"><i class="fas fa-chart-line"></i></div>
+            </div>
+
+            <div class="service-detail">
+                <div class="service-content">
+                    <span class="service-num">06 — White-Label Solutions</span>
+                    <h3>Agency Partnership Programs</h3>
+                    <p>Agencies partner with us for fully white-labeled link building fulfillment—your brand, our execution. Scalable capacity without the overhead of building an in-house team.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Fully white-labeled reporting</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated account management</li>
+                        <li><i class="fas fa-check-circle"></i> Scalable monthly capacity</li>
+                        <li><i class="fas fa-check-circle"></i> Volume-based pricing tiers</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-visual"><i class="fas fa-shield-alt"></i></div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="section-header">
+                <span class="label">How It Works</span>
+                <h2>Our Strategic <span class="highlight">Process</span></h2>
+                <p>A proven four-step methodology refined over 22+ years of enterprise link building</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-step">01</div>
+                    <h3>Discovery & Audit</h3>
+                    <p>We analyze your current link profile, competitors, and market position to identify opportunities.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">02</div>
+                    <h3>Strategy Design</h3>
+                    <p>A custom authority-building roadmap is architected around your specific ranking goals.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">03</div>
+                    <h3>Execution</h3>
+                    <p>Our team secures premium placements through manual, relationship-driven outreach.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">04</div>
+                    <h3>Reporting & Growth</h3>
+                    <p>Monthly performance reviews track ranking movement, traffic, and ROI attribution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="pricing-section">
+            <div class="section-header">
+                <span class="label">Investment Tiers</span>
+                <h2>Authority Packages Built for <span class="highlight">Scale</span></h2>
+                <p>Transparent, flexible packages designed to match your growth stage and market ambitions</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Growth</h3>
+                    <p class="tagline">For emerging brands scaling authority</p>
+                    <div class="price">$1,500<span>/mo</span></div>
+                    <p class="price-note">Billed monthly, cancel anytime</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 6-8 premium placements/mo</li>
+                        <li><i class="fas fa-check"></i> DR 30+ verified domains</li>
+                        <li><i class="fas fa-check"></i> Monthly performance report</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="pricing-btn">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">Most Popular</span>
+                    <h3>Enterprise</h3>
+                    <p class="tagline">For established brands driving dominance</p>
+                    <div class="price">$3,800<span>/mo</span></div>
+                    <p class="price-note">Billed monthly, cancel anytime</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 15-20 premium placements/mo</li>
+                        <li><i class="fas fa-check"></i> DR 45+ verified domains</li>
+                        <li><i class="fas fa-check"></i> Digital PR inclusion</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> Bi-weekly strategy calls</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="pricing-btn">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Custom</h3>
+                    <p class="tagline">For agencies & high-volume brands</p>
+                    <div class="price">Let's Talk</div>
+                    <p class="price-note">Tailored to your volume needs</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited placement volume</li>
+                        <li><i class="fas fa-check"></i> White-label fulfillment</li>
+                        <li><i class="fas fa-check"></i> Priority publisher access</li>
+                        <li><i class="fas fa-check"></i> Executive strategy sessions</li>
+                    </ul>
+                    <a href="https://wa.me/923074646927" class="pricing-btn">Contact Sales</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="section-header">
+                <span class="label">Common Questions</span>
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+            </div>
+
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> How long until I see ranking results?</h3>
+                <p>Most clients see meaningful ranking movement within 60-90 days, with compounding gains over 6-12 months as authority accumulates.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> Are all your links white-hat?</h3>
+                <p>Yes. We use 100% white-hat, manual outreach methodology — no PBNs, no link farms, no automated schemes that risk penalties.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> Do you offer white-label services for agencies?</h3>
+                <p>Yes, our Custom tier includes fully white-labeled reporting and fulfillment so agencies can resell under their own brand.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> Can I cancel or change my package anytime?</h3>
+                <p>All monthly packages are cancel-anytime with no long-term lock-in. Package upgrades can be arranged mid-cycle as needed.</p>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-box">
+            <div class="cta-box-content">
+                <h2>Ready to Build Enterprise <span class="highlight">Authority</span>?</h2>
+                <p>Schedule a strategy session and let's map out the right link building package for your growth goals.</p>
+                <a href="https://wa.me/923074646927" class="btn-primary">Schedule Strategy Session</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Linknexa</h4>
+                    <p>Premium link building and authority acquisition platform for enterprise brands. 22+ years of expertise. Global reach. Proven performance across North America, Europe, and international markets.</p>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Nadeem_seo" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://t.me/Nadeemmayos" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Link Acquisition</a></li>
+                        <li><a href="#">Authority Building</a></li>
+                        <li><a href="#">PR Placement</a></li>
+                        <li><a href="#">Performance Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Strategic Connect</h4>
+                    <p><strong>Nadeem Mayo</strong><br>Global Authority Director</p>
+                    <p style="margin-top: 15px;">
+                        <a href="https://wa.me/923074646927" style="color: var(--accent);"><i class="fab fa-whatsapp"></i> Direct WhatsApp</a>
+                    </p>
+                    <p>
+                        <a href="mailto:nadeemonlin@gmail.com" style="color: var(--accent);"><i class="fas fa-envelope"></i> Strategic Inquiry</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Linknexa. All Rights Reserved. Enterprise Link Building Intelligence Platform. | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms.html">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact -->
+    <div class="floating-contact">
+        <div class="contact-options">
+            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <button class="float-btn float-main" title="Contact Options">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+</body>
+</html>
