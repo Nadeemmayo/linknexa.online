@@ -5,235 +5,187 @@ permalink: /blog.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog — Linknexa | Link Building & SEO Authority Insights</title>
-    <meta name="description" content="Expert insights on link building, digital PR, and authority acquisition strategies from Linknexa's 22+ years of enterprise SEO experience." />
-    <link rel="canonical" href="https://linknexa.online/blog.html" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232d1b69' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='40' font-weight='bold' fill='%2300FF41' text-anchor='middle'%3ELX%3C/text%3E%3C/svg%3E" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LINKNEXA"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-LINKNEXA');
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { background: #ffffff; color: #222; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
-        :root {
-            --primary: #2d1b69;
-            --primary-light: #3d2980;
-            --accent: #00FF41;
-            --accent-dark: #00d633;
-            --secondary: #FF1493;
-            --secondary-light: #ff4db8;
-            --dark: #0a0a0a;
-            --white: #ffffff;
-        }
-        header { background: var(--white); border-bottom: 3px solid var(--primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 6px 20px rgba(45, 27, 105, 0.15); }
-        .header-container { max-width: 1400px; margin: 0 auto; padding: 24px 50px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 800; color: var(--primary); letter-spacing: 2px; text-decoration: none; display: flex; align-items: center; gap: 12px; }
-        .logo-icon { width: 48px; height: 48px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 22px; font-weight: 800; box-shadow: 0 0 20px rgba(0, 255, 65, 0.3); }
-        nav { display: flex; gap: 55px; list-style: none; }
-        nav a { text-decoration: none; color: #333; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; transition: all 0.3s ease; position: relative; }
-        nav a:hover { color: var(--accent); }
-        nav a::after { content: ''; position: absolute; bottom: -8px; left: 0; width: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--secondary)); transition: width 0.35s ease; box-shadow: 0 0 10px rgba(0, 255, 65, 0.4); }
-        nav a:hover::after { width: 100%; }
-        .cta-btn { background: linear-gradient(135deg, var(--accent), var(--accent-dark)); color: var(--primary); border: none; padding: 13px 34px; border-radius: 6px; cursor: pointer; font-weight: 800; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; transition: all 0.3s ease; text-decoration: none; display: inline-block; box-shadow: 0 0 20px rgba(0, 255, 65, 0.25); }
-        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0, 255, 65, 0.35); }
-        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 6px; }
-        .hamburger span { width: 25px; height: 2.5px; background: var(--primary); border-radius: 2px; }
-        .hero { background: linear-gradient(135deg, #f8f5ff 0%, #f0f8ff 50%, #fff8f0 100%); padding: 120px 50px; text-align: center; border-bottom: 3px solid var(--primary); position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; top: -200px; right: -150px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0, 255, 65, 0.12) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-        .hero-content { position: relative; z-index: 1; }
-        .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: 64px; color: var(--primary); margin-bottom: 20px; font-weight: 800; line-height: 1.15; letter-spacing: -1px; }
-        .hero h1 .highlight { background: linear-gradient(135deg, var(--accent), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .hero p { font-size: 18px; color: #555; max-width: 700px; margin: 0 auto; line-height: 1.8; font-weight: 400; }
-        .container { max-width: 1250px; margin: 0 auto; padding: 100px 50px; }
-        .featured-post { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: center; background: linear-gradient(135deg, rgba(0, 255, 65, 0.06), rgba(255, 20, 147, 0.04)); border: 2px solid var(--accent); border-radius: 8px; padding: 55px; margin-bottom: 100px; box-shadow: 0 0 30px rgba(0, 255, 65, 0.15); }
-        .featured-visual { width: 100%; height: 320px; background: linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 90px; box-shadow: 0 0 25px rgba(0, 255, 65, 0.2); overflow: hidden; }
-        .featured-visual img { width: 100%; height: 100%; object-fit: cover; }
-        .featured-visual i { background: linear-gradient(135deg, var(--accent), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .post-tag { display: inline-block; background: var(--primary); color: var(--accent); font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; padding: 6px 16px; border-radius: 20px; margin-bottom: 18px; }
-        .featured-post h2 { font-family: 'Space Grotesk', sans-serif; font-size: 34px; color: var(--primary); margin-bottom: 18px; font-weight: 800; line-height: 1.25; }
-        .featured-post p { font-size: 15px; color: #555; line-height: 1.85; margin-bottom: 24px; }
-        .post-meta { display: flex; gap: 20px; font-size: 12px; color: #888; margin-bottom: 24px; font-weight: 600; }
-        .post-meta span { display: flex; align-items: center; gap: 6px; }
-        .post-meta i { color: var(--accent); }
-        .post-link { color: var(--accent); text-decoration: none; font-weight: 800; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; }
-        .post-link:hover { color: var(--secondary); gap: 13px; }
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 45px; margin-bottom: 100px; }
-        .blog-card { background: var(--white); border: 2px solid var(--accent); border-radius: 8px; overflow: hidden; transition: all 0.4s ease; box-shadow: 0 0 18px rgba(0, 255, 65, 0.12); }
-        .blog-card:hover { border-color: var(--secondary); box-shadow: 0 15px 40px rgba(0, 255, 65, 0.2); transform: translateY(-8px); }
-        .blog-card-visual { width: 100%; height: 200px; background: linear-gradient(135deg, rgba(0, 255, 65, 0.1), rgba(255, 20, 147, 0.08)); display: flex; align-items: center; justify-content: center; font-size: 60px; border-bottom: 2px solid var(--accent); overflow: hidden; }
-        .blog-card-visual img { width: 100%; height: 100%; object-fit: cover; }
-        .blog-card-visual i { background: linear-gradient(135deg, var(--accent), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .blog-card-body { padding: 32px; }
-        .blog-card .post-tag { margin-bottom: 14px; }
-        .blog-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 21px; color: var(--primary); margin-bottom: 14px; font-weight: 800; line-height: 1.3; }
-        .blog-card p { font-size: 14px; color: #555; line-height: 1.75; margin-bottom: 20px; }
-        .blog-card .post-meta { margin-bottom: 18px; font-size: 11px; }
-        .empty-state { text-align: center; padding: 80px 40px; color: #888; font-size: 16px; }
-        .newsletter-section { max-width: 760px; margin: 0 auto 100px; padding: 75px 65px; background: var(--white); border: 2px solid var(--accent); text-align: center; border-radius: 8px; box-shadow: 0 0 30px rgba(0, 255, 65, 0.15); }
-        .newsletter-section h2 { font-family: 'Space Grotesk', sans-serif; font-size: 38px; margin-bottom: 18px; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
-        .newsletter-section p { margin-bottom: 32px; font-size: 14px; color: #555; line-height: 1.8; }
-        .newsletter-form { display: flex; gap: 12px; max-width: 530px; margin: 0 auto; }
-        .newsletter-form input { flex: 1; padding: 15px 22px; border: 2px solid var(--accent); border-radius: 6px; font-size: 13px; background: #f9f9f9; color: var(--primary); font-weight: 600; font-family: 'Poppins', sans-serif; }
-        .newsletter-form input::placeholder { color: #aaa; }
-        .newsletter-form input:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 20px rgba(0, 255, 65, 0.2); }
-        .newsletter-form button { padding: 15px 40px; background: linear-gradient(135deg, var(--accent), var(--accent-dark)); color: var(--primary); border: none; cursor: pointer; font-weight: 800; border-radius: 6px; text-transform: uppercase; font-size: 11px; letter-spacing: 2px; transition: all 0.3s ease; font-family: 'Poppins', sans-serif; }
-        .newsletter-form button:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0, 255, 65, 0.35); }
-        .cta-box { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: var(--white); padding: 90px 60px; text-align: center; border-radius: 8px; position: relative; overflow: hidden; box-shadow: 0 0 40px rgba(0, 255, 65, 0.15); }
-        .cta-box::after { content: ''; position: absolute; top: -150px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(0, 255, 65, 0.1) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-        .cta-box-content { position: relative; z-index: 1; }
-        .cta-box h2 { font-family: 'Space Grotesk', sans-serif; font-size: 48px; margin-bottom: 20px; font-weight: 800; letter-spacing: -1px; }
-        .cta-box .highlight { color: var(--accent); text-shadow: 0 0 15px rgba(0, 255, 65, 0.4); }
-        .cta-box p { font-size: 16px; margin-bottom: 35px; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.85; }
-        .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-dark)); color: var(--primary); border: none; padding: 16px 46px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; transition: all 0.3s ease; text-decoration: none; display: inline-block; box-shadow: 0 0 25px rgba(0, 255, 65, 0.3); }
-        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0, 255, 65, 0.4); }
-        .floating-contact { position: fixed; right: 35px; bottom: 35px; z-index: 99; }
-        .contact-options { display: none; flex-direction: column; gap: 12px; margin-bottom: 15px; animation: slideUp 0.3s ease; }
-        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .floating-contact:hover .contact-options { display: flex; }
-        .float-btn { width: 55px; height: 55px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--white); text-decoration: none; font-size: 20px; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(0, 255, 65, 0.2); border: none; }
-        .float-btn:hover { transform: scale(1.12); }
-        .float-whatsapp { background: #25D366; }
-        .float-email { background: #EA4335; }
-        .float-linkedin { background: #0077B5; }
-        .float-main { background: linear-gradient(135deg, var(--accent), var(--secondary)); color: var(--primary); width: 65px; height: 65px; font-size: 24px; box-shadow: 0 0 30px rgba(0, 255, 65, 0.3); }
-        @media (max-width: 768px) {
-            nav { display: none; }
-            .hamburger { display: flex; }
-            .hero { padding: 80px 30px; }
-            .hero h1 { font-size: 38px; }
-            .container { padding: 60px 30px; }
-            .featured-post { grid-template-columns: 1fr; padding: 35px; }
-            .newsletter-form { flex-direction: column; }
-            .cta-box { padding: 60px 30px; }
-            .cta-box h2 { font-size: 32px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkNexa Blog | Authority, Links &amp; Digital PR</title>
+<meta name="description" content="Insights on link building, digital PR, authority, AI search, websites and paid ads from LinkNexa.">
+<link rel="canonical" href="https://linknexa.online/blog.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#110A1C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:site_name" content="LinkNexa">
+<meta property="og:title" content="LinkNexa Blog | Authority, Links &amp; Digital PR">
+<meta property="og:description" content="Insights on link building, digital PR, authority, AI search, websites and paid ads from LinkNexa.">
+<meta property="og:url" content="https://linknexa.online/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://linknexa.online/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LinkNexa Blog | Authority, Links &amp; Digital PR">
+<meta name="twitter:description" content="Insights on link building, digital PR, authority, AI search, websites and paid ads from LinkNexa.">
+<meta name="twitter:image" content="https://linknexa.online/assets/img/og-image.png">
+<link rel="preload" href="/assets/fonts/urbanist-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPK7Z7KY16"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SPK7Z7KY16');</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://linknexa.online/#organization",
+   "name": "LinkNexa",
+   "url": "https://linknexa.online/",
+   "logo": "https://linknexa.online/assets/img/logo.png",
+   "image": "https://linknexa.online/assets/img/og-image.png",
+   "description": "LinkNexa is an authority-first digital agency specialising in link building and digital PR, with complete SEO, web development and paid advertising.",
+   "email": "nadeemonlin@gmail.com",
+   "telephone": "+923074646927",
+   "founder": {
+    "@type": "Person",
+    "name": "Nadeem Mayo"
+   },
+   "areaServed": [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/menadeemmayos/",
+    "https://www.facebook.com/share/19aDt6pcgh/",
+    "https://x.com/Nadeem_seo",
+    "https://www.instagram.com/menadeemmayo",
+    "https://www.fiverr.com/nadeem_mayo"
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://linknexa.online/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://linknexa.online/blog.html"
+    }
+   ]
+  },
+  {
+   "@type": "Blog",
+   "url": "https://linknexa.online/blog.html",
+   "name": "LinkNexa Blog"
+  }
+ ]
+}
+</script>
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <a href="/" class="logo">
-                <div class="logo-icon">LX</div>
-                LINKNEXA
-            </a>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/services.html">Services</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/contact.html">Contact</a>
-            </nav>
-            <div style="display: flex; gap: 15px; align-items: center;">
-                <a href="https://wa.me/923074646927" class="cta-btn">Get Started</a>
-            </div>
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Authority <span class="highlight">Insights</span></h1>
-            <p>Strategic link building intelligence, SEO analysis, and authority acquisition expertise from 22+ years in enterprise digital growth</p>
-        </div>
-    </section>
-
-    <div class="container">
-
-        {% if site.posts.size > 0 %}
-        {% assign featured = site.posts.first %}
-        <section class="featured-post">
-            <div class="featured-visual">
-                {% if featured.thumbnail %}
-                <img src="{{ featured.thumbnail | relative_url }}" alt="{{ featured.thumbnail_alt | default: featured.title | escape }}">
-                {% else %}
-                <i class="fas fa-chart-line"></i>
-                {% endif %}
-            </div>
-            <div>
-                <span class="post-tag">{{ featured.category | default: "Featured" }}</span>
-                <h2>{{ featured.title | escape }}</h2>
-                <p>{{ featured.description | default: featured.excerpt | strip_html | truncate: 180 }}</p>
-                <div class="post-meta">
-                    <span><i class="fas fa-calendar"></i> {{ featured.date | date: "%b %Y" }}</span>
-                </div>
-                <a href="{{ featured.url | relative_url }}" class="post-link">Read Article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </section>
-
-        <section class="blog-grid">
-            {% for post in site.posts offset: 1 %}
-            <div class="blog-card">
-                <div class="blog-card-visual">
-                    {% if post.thumbnail %}
-                    <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.thumbnail_alt | default: post.title | escape }}">
-                    {% else %}
-                    <i class="fas fa-pen-fancy"></i>
-                    {% endif %}
-                </div>
-                <div class="blog-card-body">
-                    <span class="post-tag">{{ post.category | default: "Insights" }}</span>
-                    <h3>{{ post.title | escape }}</h3>
-                    <p>{{ post.description | default: post.excerpt | strip_html | truncate: 130 }}</p>
-                    <div class="post-meta">
-                        <span><i class="fas fa-calendar"></i> {{ post.date | date: "%b %Y" }}</span>
-                    </div>
-                    <a href="{{ post.url | relative_url }}" class="post-link">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            {% endfor %}
-        </section>
-        {% else %}
-        <div class="empty-state">
-            <p>No articles published yet. Check back soon.</p>
-        </div>
-        {% endif %}
-
-        <section class="newsletter-section">
-            <h2>Link Building Intelligence</h2>
-            <p>Receive exclusive link strategies, authority insights, and premium placement opportunities curated for enterprise growth.</p>
-            <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-                <input type="email" placeholder="strategic@enterprise.com" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-
-        <section class="cta-box">
-            <div class="cta-box-content">
-                <h2>Ready to Build Enterprise <span class="highlight">Authority</span>?</h2>
-                <p>Let's discuss how premium link building and strategic authority acquisition can accelerate your organic growth.</p>
-                <a href="https://wa.me/923074646927" class="btn-primary">Schedule Strategy Session</a>
-            </div>
-        </section>
+<body class="dark cards-shadow">
+<header class="site-header">
+  <div class="topbar"><div class="wrap">
+    <span>Authority-first SEO, digital PR, web & ads for brands in the US, UK & Canada</span>
+    <div class="topbar-links"><a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope"></i>nadeemonlin@gmail.com</a><a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a></div>
+  </div></div>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="LinkNexa home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgh" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C026D3"/><stop offset="1" stop-color="#7E22CE"/></linearGradient></defs><path d="M24 2c12 0 22 8 22 21s-9 23-22 23S2 37 2 24 12 2 24 2Z" fill="url(#lgh)"/><path d="M21 27a5.5 5.5 0 0 0 7.8 0l4.4-4.4a5.5 5.5 0 0 0-7.8-7.8l-1.6 1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 21a5.5 5.5 0 0 0-7.8 0l-4.4 4.4a5.5 5.5 0 0 0 7.8 7.8l1.6-1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">Link<span>Nexa</span></span><span class="brand-tag">Authority & digital PR</span></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="nav-link" href="/">Home</a>
+      <div class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></button>
+        <div class="menu"><div class="mega"><div class="menu-col"><h4>Search (SEO)</h4><a href="/complete-seo.html"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i>Complete SEO</a><a href="/on-page-seo.html"><i class="fas fa-file-lines" aria-hidden="true"></i>On-Page SEO</a><a href="/off-page-seo.html"><i class="fas fa-link" aria-hidden="true"></i>Off-Page SEO</a><a href="/technical-seo.html"><i class="fas fa-gears" aria-hidden="true"></i>Technical SEO</a><a href="/local-seo.html"><i class="fas fa-location-dot" aria-hidden="true"></i>Local SEO</a><a href="/link-building.html"><i class="fas fa-newspaper" aria-hidden="true"></i>Link Building & Guest Posting</a><a href="/content-writing.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>SEO Content Writing</a></div><div class="menu-col"><h4>Web Development</h4><a href="/web-development.html"><i class="fas fa-code" aria-hidden="true"></i>Web Development</a><a href="/custom-website.html"><i class="fas fa-laptop-code" aria-hidden="true"></i>Custom Website Design</a></div><div class="menu-col"><h4>Paid Ads</h4><a href="/google-ads.html"><i class="fa-brands fa-google" aria-hidden="true"></i>Google Ads</a><a href="/meta-ads.html"><i class="fa-brands fa-meta" aria-hidden="true"></i>Meta Ads</a><a href="/facebook-ads.html"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook Ads</a><a href="/instagram-ads.html"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram Ads</a><a href="/tiktok-ads.html"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok Ads</a></div></div>
+          <a href="/services.html" style="margin-top:14px;justify-content:center;background:var(--bg-tint);color:var(--brand)">View all services <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+      
+      <a class="nav-link" href="/portfolio.html">Portfolio</a>
+      <a class="nav-link" href="/about.html">About</a>
+      <a class="nav-link active" href="/blog.html">Blog</a>
+      <a class="nav-link" href="/FAQs.html">FAQ</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
+      <a class="btn btn-accent mobile-cta" href="/contact.html">Get an Authority Plan</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-header" href="/contact.html">Get an Authority Plan</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </div>
-
-    <div class="floating-contact">
-        <div class="contact-options">
-            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <button class="float-btn float-main" title="Contact Options">
-            <i class="fas fa-comments"></i>
-        </button>
+  </div>
+</header>
+<main>
+<section class="hero page-hero"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><b>Blog</b></nav>
+  <span class="eyebrow">Blog</span>
+  <h1 style="max-width:880px">Authority, links & <span class="grad-text">digital PR insights</span></h1>
+  <p class="lead">How to earn the trust that rankings depend on.</p>
+  
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head left"><span class="eyebrow">Latest articles</span><h2>From the blog</h2></div>
+  <div class="grid g-3">{% for post in site.posts %}
+<a class="post-card reveal" href="{{ post.url | relative_url }}">
+  {% if post.thumbnail and post.thumbnail != "" %}<div class="post-thumb"><img src="{{ post.thumbnail | relative_url }}" alt="{{ post.thumbnail_alt | default: post.title | escape }}" loading="lazy"></div>{% else %}<div class="post-thumb art"><i class="fas fa-chart-line"></i></div>{% endif %}
+  <div class="post-body">
+    <div class="post-meta">{% if post.category %}<span class="tag">{{ post.category | escape }}</span>{% endif %}<span>{{ post.date | date: "%B %d, %Y" }}</span></div>
+    <h3>{{ post.title | escape }}</h3>
+    <p>{% if post.description %}{{ post.description | strip_html | truncate: 160 }}{% else %}{{ post.excerpt | strip_html | truncate: 160 }}{% endif %}</p>
+    <span class="card-link">Read article <i class="fas fa-arrow-right"></i></span>
+  </div>
+</a>
+{% endfor %}<a class="post-card reveal" href="/blog-post-3.html"><div class="post-thumb art"><i class="fas fa-bullhorn"></i></div>
+<div class="post-body"><div class="post-meta"><span class="tag">Digital PR</span><span>May 8, 2026</span></div><h3>Digital PR Angles That Earn Coverage</h3><p>Five types of story angles that consistently earn coverage and authoritative links.</p><span class="card-link">Read article <i class="fas fa-arrow-right"></i></span></div></a><a class="post-card reveal" href="/blog-post-2.html"><div class="post-thumb art"><i class="fas fa-link"></i></div>
+<div class="post-body"><div class="post-meta"><span class="tag">Link Building</span><span>April 24, 2026</span></div><h3>Editorial Links vs Bought Links: Know the Difference</h3><p>How to tell genuine editorial placements from risky paid links, and why it matters for your rankings.</p><span class="card-link">Read article <i class="fas fa-arrow-right"></i></span></div></a><a class="post-card reveal" href="/blog-post-1.html"><div class="post-thumb art"><i class="fas fa-robot"></i></div>
+<div class="post-body"><div class="post-meta"><span class="tag">AI Search</span><span>April 10, 2026</span></div><h3>Why Authority Matters Even More in AI Search</h3><p>AI answers lean on trusted sources. Here's why brand authority and editorial mentions matter more than ever.</p><span class="card-link">Read article <i class="fas fa-arrow-right"></i></span></div></a></div>
+</div></section><section class="section-sm"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><span class="eyebrow">Free authority plan</span><h2>Want us to build your authority?</h2><p>We'll compare your link profile with your top competitors and send a free authority plan within 24 hours.</p></div>
+    <div class="cta-actions">
+      <a class="btn btn-accent" href="/contact.html">Get My Authority Plan <i class="fas fa-arrow-right"></i></a>
+      <a class="btn btn-outline-light" href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
     </div>
-
-    <script>
-        function handleNewsletter(e) {
-            e.preventDefault();
-            alert('Thank you. Your subscription to Linknexa Intelligence confirmed.');
-            e.target.reset();
-        }
-    </script>
+  </div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="/" class="brand" aria-label="LinkNexa home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C026D3"/><stop offset="1" stop-color="#7E22CE"/></linearGradient></defs><path d="M24 2c12 0 22 8 22 21s-9 23-22 23S2 37 2 24 12 2 24 2Z" fill="url(#lgf)"/><path d="M21 27a5.5 5.5 0 0 0 7.8 0l4.4-4.4a5.5 5.5 0 0 0-7.8-7.8l-1.6 1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 21a5.5 5.5 0 0 0-7.8 0l-4.4 4.4a5.5 5.5 0 0 0 7.8 7.8l1.6-1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">Link<span>Nexa</span></span><span class="brand-tag">Authority & digital PR</span></span></a>
+        <p>LinkNexa builds the authority that rankings depend on: editorial links and digital PR, backed by complete SEO, websites and paid ads.</p>
+        <div class="socials"><a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/menadeemmayo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://x.com/Nadeem_seo" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="https://t.me/Nadeemmayos" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a></div>
+        <div class="market-btns"><a href="https://www.fiverr.com/nadeem_mayo" target="_blank" rel="noopener">Hire on Fiverr</a><a href="https://upwork.com/freelancers/~01929269c0cf45d7c1" target="_blank" rel="noopener">Hire on Upwork</a></div>
+      </div>
+      <div><h4>SEO Services</h4><div class="footer-links"><a href="/complete-seo.html">Complete SEO</a><a href="/on-page-seo.html">On-Page SEO</a><a href="/off-page-seo.html">Off-Page SEO</a><a href="/technical-seo.html">Technical SEO</a><a href="/local-seo.html">Local SEO</a><a href="/link-building.html">Link Building & Guest Posting</a><a href="/content-writing.html">SEO Content Writing</a></div></div>
+      <div><h4>Web &amp; Ads</h4><div class="footer-links"><a href="/web-development.html">Web Development</a><a href="/custom-website.html">Custom Website Design</a><a href="/google-ads.html">Google Ads</a><a href="/meta-ads.html">Meta Ads</a><a href="/facebook-ads.html">Facebook Ads</a><a href="/instagram-ads.html">Instagram Ads</a><a href="/tiktok-ads.html">TikTok Ads</a></div></div>
+      <div><h4>Company</h4><div class="footer-links">
+        <a href="/about.html">About</a><a href="/portfolio.html">Portfolio</a><a href="/blog.html">Blog</a><a href="/FAQs.html">FAQ</a><a href="/contact.html">Contact</a>
+      </div></div>
+      <div><h4>Get in touch</h4>
+        <div class="footer-contact">
+          <a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope"></i>nadeemonlin@gmail.com</a>
+          <a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a>
+        </div>
+        <div class="pay"><span>PayPal</span><span>Payoneer</span><span>Wise</span><span>Visa</span><span>Mastercard</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 LinkNexa. All rights reserved.</span>
+      <nav aria-label="Legal"><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a><a href="/refund-policy.html">Refund Policy</a><a href="/sitemap.xml">Sitemap</a></nav>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/923074646927?text=Hi%20LinkNexa%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 56" role="img" aria-label="LinkNexa">
+<g transform="translate(0 4)"><svg viewBox="0 0 48 48" width="48" height="48"><defs><linearGradient id="lgL" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C026D3"/><stop offset="1" stop-color="#7E22CE"/></linearGradient></defs><path d="M24 2c12 0 22 8 22 21s-9 23-22 23S2 37 2 24 12 2 24 2Z" fill="url(#lgL)"/><path d="M21 27a5.5 5.5 0 0 0 7.8 0l4.4-4.4a5.5 5.5 0 0 0-7.8-7.8l-1.6 1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 21a5.5 5.5 0 0 0-7.8 0l-4.4 4.4a5.5 5.5 0 0 0 7.8 7.8l1.6-1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></g>
+<text x="62" y="29" font-family="Urbanist, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#110A1C" letter-spacing="-.4">Link<tspan fill="#A21CAF">Nexa</tspan></text>
+<text x="63" y="47" font-family="Urbanist, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#5A6081" letter-spacing="2.4">AUTHORITY & DIGITAL PR</text>
+</svg>

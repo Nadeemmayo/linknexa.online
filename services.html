@@ -1,879 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Services — Linknexa | Premium Link Building & Authority Solutions</title>
-    <meta name="description" content="Explore Linknexa's full suite of premium link acquisition, authority building, digital PR, and SEO intelligence services for enterprise brands." />
-    <link rel="canonical" href="https://linknexa.online/services.html" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232d1b69' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-size='40' font-weight='bold' fill='%2300FF41' text-anchor='middle'%3ELX%3C/text%3E%3C/svg%3E" />
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LINKNEXA"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-LINKNEXA');
-    </script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { background: #ffffff; color: #222; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
-
-        :root {
-            --primary: #2d1b69;
-            --primary-light: #3d2980;
-            --accent: #00FF41;
-            --accent-dark: #00d633;
-            --secondary: #FF1493;
-            --secondary-light: #ff4db8;
-            --dark: #0a0a0a;
-            --white: #ffffff;
-        }
-
-        header {
-            background: var(--white);
-            border-bottom: 3px solid var(--primary);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 6px 20px rgba(45, 27, 105, 0.15);
-        }
-
-        .header-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 24px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 32px;
-            font-weight: 800;
-            color: var(--primary);
-            letter-spacing: 2px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-icon {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-size: 22px;
-            font-weight: 800;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
-        }
-
-        nav { display: flex; gap: 55px; list-style: none; }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        nav a:hover { color: var(--accent); }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), var(--secondary));
-            transition: width 0.35s ease;
-            box-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
-        }
-
-        nav a:hover::after { width: 100%; }
-
-        .cta-btn {
-            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-            color: var(--primary);
-            border: none;
-            padding: 13px 34px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 800;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.25);
-        }
-
-        .cta-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 255, 65, 0.35);
-        }
-
-        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 6px; }
-        .hamburger span { width: 25px; height: 2.5px; background: var(--primary); border-radius: 2px; }
-
-        .hero {
-            background: linear-gradient(135deg, #f8f5ff 0%, #f0f8ff 50%, #fff8f0 100%);
-            padding: 120px 50px;
-            text-align: center;
-            border-bottom: 3px solid var(--primary);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -200px;
-            right: -150px;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(0, 255, 65, 0.12) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero-content { position: relative; z-index: 1; }
-
-        .hero h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 64px;
-            color: var(--primary);
-            margin-bottom: 20px;
-            font-weight: 800;
-            line-height: 1.15;
-            letter-spacing: -1px;
-        }
-
-        .hero h1 .highlight {
-            background: linear-gradient(135deg, var(--accent), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: #555;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.8;
-            font-weight: 400;
-        }
-
-        .container { max-width: 1250px; margin: 0 auto; padding: 100px 50px; }
-
-        .section-header { text-align: center; margin-bottom: 75px; }
-
-        .section-header .label {
-            font-size: 11px;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 18px;
-            font-weight: 800;
-            display: block;
-            text-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
-        }
-
-        .section-header h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 52px;
-            color: var(--primary);
-            font-weight: 800;
-            margin-bottom: 24px;
-            line-height: 1.18;
-            letter-spacing: -1px;
-        }
-
-        .section-header h2 .highlight { color: var(--accent); text-shadow: 0 0 20px rgba(0, 255, 65, 0.25); }
-
-        .section-header p {
-            font-size: 16px;
-            color: #555;
-            max-width: 720px;
-            margin: 0 auto;
-            line-height: 1.85;
-        }
-
-        .service-detail {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            margin-bottom: 110px;
-        }
-
-        .service-detail:nth-child(even) .service-visual { order: 2; }
-
-        .service-visual {
-            width: 100%;
-            height: 340px;
-            background: linear-gradient(135deg, rgba(0, 255, 65, 0.1), rgba(255, 20, 147, 0.08));
-            border-radius: 8px;
-            border: 2px solid var(--accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 90px;
-            box-shadow: 0 0 30px rgba(0, 255, 65, 0.15);
-            color: var(--primary);
-        }
-
-        .service-visual i { background: linear-gradient(135deg, var(--accent), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-
-        .service-num {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 13px;
-            color: var(--secondary);
-            font-weight: 800;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 14px;
-            display: block;
-        }
-
-        .service-content h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 34px;
-            color: var(--primary);
-            margin-bottom: 20px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        }
-
-        .service-content p {
-            font-size: 15px;
-            color: #555;
-            line-height: 1.85;
-            margin-bottom: 24px;
-        }
-
-        .service-features { list-style: none; margin-bottom: 28px; }
-
-        .service-features li {
-            font-size: 14px;
-            color: #333;
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 500;
-        }
-
-        .service-features li i {
-            color: var(--accent);
-            font-size: 16px;
-            text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
-        }
-
-        .service-cta-link {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 800;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .service-cta-link:hover { color: var(--secondary); gap: 13px; }
-
-        .process-section { margin-bottom: 110px; }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 35px;
-        }
-
-        .process-card {
-            background: var(--white);
-            border: 2px solid var(--accent);
-            border-radius: 8px;
-            padding: 45px 35px;
-            text-align: center;
-            transition: all 0.4s ease;
-            box-shadow: 0 0 18px rgba(0, 255, 65, 0.12);
-            position: relative;
-        }
-
-        .process-card:hover {
-            border-color: var(--secondary);
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0, 255, 65, 0.2);
-        }
-
-        .process-step {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent), var(--secondary));
-            color: var(--primary);
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 800;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 22px;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.25);
-        }
-
-        .process-card h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 19px;
-            color: var(--primary);
-            margin-bottom: 12px;
-            font-weight: 800;
-        }
-
-        .process-card p { font-size: 13px; color: #555; line-height: 1.75; }
-
-        .pricing-section { margin-bottom: 110px; }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-        }
-
-        .pricing-card {
-            background: var(--white);
-            border: 2px solid var(--accent);
-            border-radius: 8px;
-            padding: 50px 40px;
-            transition: all 0.4s ease;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.12);
-            position: relative;
-        }
-
-        .pricing-card.featured {
-            border-color: var(--secondary);
-            background: linear-gradient(135deg, rgba(0, 255, 65, 0.06), rgba(255, 20, 147, 0.04));
-            box-shadow: 0 0 30px rgba(255, 20, 147, 0.2);
-            transform: scale(1.03);
-        }
-
-        .pricing-badge {
-            position: absolute;
-            top: -14px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
-            color: var(--white);
-            font-size: 10px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            padding: 7px 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 15px rgba(255, 20, 147, 0.4);
-        }
-
-        .pricing-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0, 255, 65, 0.2); }
-        .pricing-card.featured:hover { transform: scale(1.03) translateY(-8px); }
-
-        .pricing-card h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 24px;
-            color: var(--primary);
-            margin-bottom: 10px;
-            font-weight: 800;
-        }
-
-        .pricing-card .tagline { font-size: 13px; color: #777; margin-bottom: 25px; }
-
-        .pricing-card .price {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 42px;
-            color: var(--primary);
-            font-weight: 800;
-            margin-bottom: 5px;
-        }
-
-        .pricing-card .price span { font-size: 14px; color: #888; font-weight: 500; }
-        .pricing-card .price-note { font-size: 12px; color: #999; margin-bottom: 30px; }
-
-        .pricing-features { list-style: none; margin-bottom: 35px; }
-
-        .pricing-features li {
-            font-size: 14px;
-            color: #444;
-            padding: 11px 0;
-            border-bottom: 1px solid #f0f0f0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .pricing-features li i { color: var(--accent); font-size: 14px; }
-
-        .pricing-btn {
-            display: block;
-            text-align: center;
-            background: var(--white);
-            color: var(--primary);
-            border: 2px solid var(--primary);
-            padding: 14px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 800;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-        }
-
-        .pricing-card.featured .pricing-btn {
-            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-            color: var(--primary);
-            border: none;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
-        }
-
-        .pricing-btn:hover { background: var(--primary); color: var(--accent); }
-        .pricing-card.featured .pricing-btn:hover { transform: translateY(-3px); }
-
-        .faq-section { margin-bottom: 110px; max-width: 900px; margin-left: auto; margin-right: auto; }
-
-        .faq-item {
-            border: 2px solid var(--accent);
-            border-radius: 8px;
-            margin-bottom: 20px;
-            padding: 30px 35px;
-            box-shadow: 0 0 15px rgba(0, 255, 65, 0.1);
-        }
-
-        .faq-item h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 18px;
-            color: var(--primary);
-            margin-bottom: 12px;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .faq-item h3 i { color: var(--accent); font-size: 16px; }
-        .faq-item p { font-size: 14px; color: #555; line-height: 1.8; padding-left: 28px; }
-
-        .cta-box {
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            color: var(--white);
-            padding: 90px 60px;
-            text-align: center;
-            border-radius: 8px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 0 40px rgba(0, 255, 65, 0.15);
-        }
-
-        .cta-box::after {
-            content: '';
-            position: absolute;
-            top: -150px;
-            right: -100px;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(0, 255, 65, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .cta-box-content { position: relative; z-index: 1; }
-
-        .cta-box h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 48px;
-            margin-bottom: 20px;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-
-        .cta-box .highlight { color: var(--accent); text-shadow: 0 0 15px rgba(0, 255, 65, 0.4); }
-
-        .cta-box p {
-            font-size: 16px;
-            margin-bottom: 35px;
-            opacity: 0.95;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.85;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-            color: var(--primary);
-            border: none;
-            padding: 16px 46px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            box-shadow: 0 0 25px rgba(0, 255, 65, 0.3);
-        }
-
-        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0, 255, 65, 0.4); }
-
-        /* Floating Contact */
-        .floating-contact { position: fixed; right: 35px; bottom: 35px; z-index: 99; }
-        .contact-options { display: none; flex-direction: column; gap: 12px; margin-bottom: 15px; animation: slideUp 0.3s ease; }
-
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .floating-contact:hover .contact-options { display: flex; }
-
-        .float-btn {
-            width: 55px;
-            height: 55px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-decoration: none;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(0, 255, 65, 0.2);
-            border: none;
-        }
-
-        .float-btn:hover { transform: scale(1.12); }
-        .float-whatsapp { background: #25D366; }
-        .float-email { background: #EA4335; }
-        .float-linkedin { background: #0077B5; }
-
-        .float-main {
-            background: linear-gradient(135deg, var(--accent), var(--secondary));
-            color: var(--primary);
-            width: 65px;
-            height: 65px;
-            font-size: 24px;
-            box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            nav { display: none; }
-            .hamburger { display: flex; }
-            .hero { padding: 80px 30px; }
-            .hero h1 { font-size: 38px; }
-            .container { padding: 60px 30px; }
-            .section-header h2 { font-size: 32px; }
-            .service-detail { grid-template-columns: 1fr; gap: 35px; }
-            .service-detail:nth-child(even) .service-visual { order: 0; }
-            .pricing-card.featured { transform: scale(1); }
-            .cta-box { padding: 60px 30px; }
-            .cta-box h2 { font-size: 32px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services | Link Building, Digital PR, SEO, Web &amp; Ads | LinkNexa</title>
+<meta name="description" content="LinkNexa services: link building, off-page and complete SEO, technical, on-page and local SEO, content, web development and Google, Meta, Facebook, Instagram &amp; TikTok ads.">
+<link rel="canonical" href="https://linknexa.online/services.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#110A1C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:site_name" content="LinkNexa">
+<meta property="og:title" content="Services | Link Building, Digital PR, SEO, Web &amp; Ads | LinkNexa">
+<meta property="og:description" content="LinkNexa services: link building, off-page and complete SEO, technical, on-page and local SEO, content, web development and Google, Meta, Facebook, Instagram &amp; TikTok ads.">
+<meta property="og:url" content="https://linknexa.online/services.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://linknexa.online/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Services | Link Building, Digital PR, SEO, Web &amp; Ads | LinkNexa">
+<meta name="twitter:description" content="LinkNexa services: link building, off-page and complete SEO, technical, on-page and local SEO, content, web development and Google, Meta, Facebook, Instagram &amp; TikTok ads.">
+<meta name="twitter:image" content="https://linknexa.online/assets/img/og-image.png">
+<link rel="preload" href="/assets/fonts/urbanist-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPK7Z7KY16"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SPK7Z7KY16');</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://linknexa.online/#organization",
+   "name": "LinkNexa",
+   "url": "https://linknexa.online/",
+   "logo": "https://linknexa.online/assets/img/logo.png",
+   "image": "https://linknexa.online/assets/img/og-image.png",
+   "description": "LinkNexa is an authority-first digital agency specialising in link building and digital PR, with complete SEO, web development and paid advertising.",
+   "email": "nadeemonlin@gmail.com",
+   "telephone": "+923074646927",
+   "founder": {
+    "@type": "Person",
+    "name": "Nadeem Mayo"
+   },
+   "areaServed": [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/menadeemmayos/",
+    "https://www.facebook.com/share/19aDt6pcgh/",
+    "https://x.com/Nadeem_seo",
+    "https://www.instagram.com/menadeemmayo",
+    "https://www.fiverr.com/nadeem_mayo"
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://linknexa.online/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Services",
+     "item": "https://linknexa.online/services.html"
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "url": "https://linknexa.online/complete-seo.html",
+     "name": "Complete SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "url": "https://linknexa.online/on-page-seo.html",
+     "name": "On-Page SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "url": "https://linknexa.online/off-page-seo.html",
+     "name": "Off-Page SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "url": "https://linknexa.online/technical-seo.html",
+     "name": "Technical SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "url": "https://linknexa.online/local-seo.html",
+     "name": "Local SEO"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "url": "https://linknexa.online/link-building.html",
+     "name": "Link Building & Guest Posting"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "url": "https://linknexa.online/content-writing.html",
+     "name": "SEO Content Writing"
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "url": "https://linknexa.online/web-development.html",
+     "name": "Web Development"
+    },
+    {
+     "@type": "ListItem",
+     "position": 9,
+     "url": "https://linknexa.online/custom-website.html",
+     "name": "Custom Website Design"
+    },
+    {
+     "@type": "ListItem",
+     "position": 10,
+     "url": "https://linknexa.online/google-ads.html",
+     "name": "Google Ads"
+    },
+    {
+     "@type": "ListItem",
+     "position": 11,
+     "url": "https://linknexa.online/meta-ads.html",
+     "name": "Meta Ads"
+    },
+    {
+     "@type": "ListItem",
+     "position": 12,
+     "url": "https://linknexa.online/facebook-ads.html",
+     "name": "Facebook Ads"
+    },
+    {
+     "@type": "ListItem",
+     "position": 13,
+     "url": "https://linknexa.online/instagram-ads.html",
+     "name": "Instagram Ads"
+    },
+    {
+     "@type": "ListItem",
+     "position": 14,
+     "url": "https://linknexa.online/tiktok-ads.html",
+     "name": "TikTok Ads"
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <a href="/" class="logo">
-                <div class="logo-icon">LX</div>
-                LINKNEXA
-            </a>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/services.html">Services</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/contact.html">Contact</a>
-            </nav>
-            <div style="display: flex; gap: 15px; align-items: center;">
-                <a href="https://wa.me/923074646927" class="cta-btn">Get Started</a>
-            </div>
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Our <span class="highlight">Services</span></h1>
-            <p>Comprehensive link building and authority acquisition solutions engineered for enterprise-grade ranking growth and sustainable market dominance</p>
-        </div>
-    </section>
-
-    <div class="container">
-        <!-- Detailed Services -->
-        <section>
-            <div class="section-header">
-                <span class="label">What We Offer</span>
-                <h2>Full-Spectrum <span class="highlight">Authority Solutions</span></h2>
-                <p>Every service is built on 22+ years of link building expertise, contextual precision, and measurable ranking impact</p>
-            </div>
-
-            <div class="service-detail">
-                <div class="service-content">
-                    <span class="service-num">01 — Premium Link Acquisition</span>
-                    <h3>High-Authority Backlink Placement</h3>
-                    <p>We secure curated backlinks from tier-one, niche-relevant publications with verified traffic and authority metrics. Every placement is manually vetted for editorial quality and contextual fit.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> DR/DA 40+ verified domains</li>
-                        <li><i class="fas fa-check-circle"></i> Manual outreach, zero PBNs</li>
-                        <li><i class="fas fa-check-circle"></i> Niche-relevant editorial placement</li>
-                        <li><i class="fas fa-check-circle"></i> Live link verification reporting</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-visual"><i class="fas fa-link"></i></div>
-            </div>
-
-            <div class="service-detail">
-                <div class="service-content">
-                    <span class="service-num">02 — Contextual Placements</span>
-                    <h3>Guest Posts & Niche Edits</h3>
-                    <p>Strategic content placements within established, high-authority articles ensure natural link velocity and long-term ranking stability across your target markets.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Custom-written guest content</li>
-                        <li><i class="fas fa-check-circle"></i> Contextual niche edit insertions</li>
-                        <li><i class="fas fa-check-circle"></i> Topically relevant host sites</li>
-                        <li><i class="fas fa-check-circle"></i> Natural anchor text distribution</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-visual"><i class="fas fa-edit"></i></div>
-            </div>
-
-            <div class="service-detail">
-                <div class="service-content">
-                    <span class="service-num">03 — Authority Architecture</span>
-                    <h3>Link Profile Strategy & Diversification</h3>
-                    <p>We design comprehensive link profiles that balance domain diversity, anchor text ratios, and topical relevance—engineered to withstand algorithm shifts and sustain rankings long-term.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Competitor gap analysis</li>
-                        <li><i class="fas fa-check-circle"></i> Anchor text ratio planning</li>
-                        <li><i class="fas fa-check-circle"></i> Domain diversification strategy</li>
-                        <li><i class="fas fa-check-circle"></i> Algorithm-resilient link profiles</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-visual"><i class="fas fa-network-wired"></i></div>
-            </div>
-
-            <div class="service-detail">
-                <div class="service-content">
-                    <span class="service-num">04 — Digital PR & Brand Authority</span>
-                    <h3>Thought Leadership & PR Placements</h3>
-                    <p>Elevate your brand through press coverage, expert commentary placements, and thought leadership positioning across premium publications your customers actually read.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Journalist & publisher outreach</li>
-                        <li><i class="fas fa-check-circle"></i> Data-driven PR campaigns</li>
-                        <li><i class="fas fa-check-circle"></i> Expert commentary syndication</li>
-                        <li><i class="fas fa-check-circle"></i> Brand mention monitoring</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-visual"><i class="fas fa-star"></i></div>
-            </div>
-
-            <div class="service-detail">
-                <div class="service-content">
-                    <span class="service-num">05 — SEO Audits & Analytics</span>
-                    <h3>Technical & Link Performance Audits</h3>
-                    <p>Comprehensive audits identify technical SEO gaps, toxic backlinks, and untapped opportunities—paired with ongoing performance analytics to track every link's ROI.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Full technical & on-page audit</li>
-                        <li><i class="fas fa-check-circle"></i> Toxic backlink identification</li>
-                        <li><i class="fas fa-check-circle"></i> Monthly performance reporting</li>
-                        <li><i class="fas fa-check-circle"></i> Traffic & ranking attribution</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-visual"><i class="fas fa-chart-line"></i></div>
-            </div>
-
-            <div class="service-detail">
-                <div class="service-content">
-                    <span class="service-num">06 — White-Label Solutions</span>
-                    <h3>Agency Partnership Programs</h3>
-                    <p>Agencies partner with us for fully white-labeled link building fulfillment—your brand, our execution. Scalable capacity without the overhead of building an in-house team.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Fully white-labeled reporting</li>
-                        <li><i class="fas fa-check-circle"></i> Dedicated account management</li>
-                        <li><i class="fas fa-check-circle"></i> Scalable monthly capacity</li>
-                        <li><i class="fas fa-check-circle"></i> Volume-based pricing tiers</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="service-cta-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-visual"><i class="fas fa-shield-alt"></i></div>
-            </div>
-        </section>
-
-        <!-- Process Section -->
-        <section class="process-section">
-            <div class="section-header">
-                <span class="label">How It Works</span>
-                <h2>Our Strategic <span class="highlight">Process</span></h2>
-                <p>A proven four-step methodology refined over 22+ years of enterprise link building</p>
-            </div>
-
-            <div class="process-grid">
-                <div class="process-card">
-                    <div class="process-step">01</div>
-                    <h3>Discovery & Audit</h3>
-                    <p>We analyze your current link profile, competitors, and market position to identify opportunities.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-step">02</div>
-                    <h3>Strategy Design</h3>
-                    <p>A custom authority-building roadmap is architected around your specific ranking goals.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-step">03</div>
-                    <h3>Execution</h3>
-                    <p>Our team secures premium placements through manual, relationship-driven outreach.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-step">04</div>
-                    <h3>Reporting & Growth</h3>
-                    <p>Monthly performance reviews track ranking movement, traffic, and ROI attribution.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing -->
-        <section class="pricing-section">
-            <div class="section-header">
-                <span class="label">Investment Tiers</span>
-                <h2>Authority Packages Built for <span class="highlight">Scale</span></h2>
-                <p>Transparent, flexible packages designed to match your growth stage and market ambitions</p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Growth</h3>
-                    <p class="tagline">For emerging brands scaling authority</p>
-                    <div class="price">$1,500<span>/mo</span></div>
-                    <p class="price-note">Billed monthly, cancel anytime</p>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 6-8 premium placements/mo</li>
-                        <li><i class="fas fa-check"></i> DR 30+ verified domains</li>
-                        <li><i class="fas fa-check"></i> Monthly performance report</li>
-                        <li><i class="fas fa-check"></i> Email support</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="pricing-btn">Get Started</a>
-                </div>
-
-                <div class="pricing-card featured">
-                    <span class="pricing-badge">Most Popular</span>
-                    <h3>Enterprise</h3>
-                    <p class="tagline">For established brands driving dominance</p>
-                    <div class="price">$3,800<span>/mo</span></div>
-                    <p class="price-note">Billed monthly, cancel anytime</p>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 15-20 premium placements/mo</li>
-                        <li><i class="fas fa-check"></i> DR 45+ verified domains</li>
-                        <li><i class="fas fa-check"></i> Digital PR inclusion</li>
-                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
-                        <li><i class="fas fa-check"></i> Bi-weekly strategy calls</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="pricing-btn">Get Started</a>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Custom</h3>
-                    <p class="tagline">For agencies & high-volume brands</p>
-                    <div class="price">Let's Talk</div>
-                    <p class="price-note">Tailored to your volume needs</p>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Unlimited placement volume</li>
-                        <li><i class="fas fa-check"></i> White-label fulfillment</li>
-                        <li><i class="fas fa-check"></i> Priority publisher access</li>
-                        <li><i class="fas fa-check"></i> Executive strategy sessions</li>
-                    </ul>
-                    <a href="https://wa.me/923074646927" class="pricing-btn">Contact Sales</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="faq-section">
-            <div class="section-header">
-                <span class="label">Common Questions</span>
-                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
-            </div>
-
-            <div class="faq-item">
-                <h3><i class="fas fa-question-circle"></i> How long until I see ranking results?</h3>
-                <p>Most clients see meaningful ranking movement within 60-90 days, with compounding gains over 6-12 months as authority accumulates.</p>
-            </div>
-            <div class="faq-item">
-                <h3><i class="fas fa-question-circle"></i> Are all your links white-hat?</h3>
-                <p>Yes. We use 100% white-hat, manual outreach methodology — no PBNs, no link farms, no automated schemes that risk penalties.</p>
-            </div>
-            <div class="faq-item">
-                <h3><i class="fas fa-question-circle"></i> Do you offer white-label services for agencies?</h3>
-                <p>Yes, our Custom tier includes fully white-labeled reporting and fulfillment so agencies can resell under their own brand.</p>
-            </div>
-            <div class="faq-item">
-                <h3><i class="fas fa-question-circle"></i> Can I cancel or change my package anytime?</h3>
-                <p>All monthly packages are cancel-anytime with no long-term lock-in. Package upgrades can be arranged mid-cycle as needed.</p>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta-box">
-            <div class="cta-box-content">
-                <h2>Ready to Build Enterprise <span class="highlight">Authority</span>?</h2>
-                <p>Schedule a strategy session and let's map out the right link building package for your growth goals.</p>
-                <a href="https://wa.me/923074646927" class="btn-primary">Schedule Strategy Session</a>
-            </div>
-        </section>
+<body class="dark cards-shadow">
+<header class="site-header">
+  <div class="topbar"><div class="wrap">
+    <span>Authority-first SEO, digital PR, web & ads for brands in the US, UK & Canada</span>
+    <div class="topbar-links"><a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope"></i>nadeemonlin@gmail.com</a><a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a></div>
+  </div></div>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="LinkNexa home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgh" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C026D3"/><stop offset="1" stop-color="#7E22CE"/></linearGradient></defs><path d="M24 2c12 0 22 8 22 21s-9 23-22 23S2 37 2 24 12 2 24 2Z" fill="url(#lgh)"/><path d="M21 27a5.5 5.5 0 0 0 7.8 0l4.4-4.4a5.5 5.5 0 0 0-7.8-7.8l-1.6 1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 21a5.5 5.5 0 0 0-7.8 0l-4.4 4.4a5.5 5.5 0 0 0 7.8 7.8l1.6-1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">Link<span>Nexa</span></span><span class="brand-tag">Authority & digital PR</span></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="nav-link" href="/">Home</a>
+      <div class="has-menu">
+        <button class="nav-link active" type="button" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></button>
+        <div class="menu"><div class="mega"><div class="menu-col"><h4>Search (SEO)</h4><a href="/complete-seo.html"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i>Complete SEO</a><a href="/on-page-seo.html"><i class="fas fa-file-lines" aria-hidden="true"></i>On-Page SEO</a><a href="/off-page-seo.html"><i class="fas fa-link" aria-hidden="true"></i>Off-Page SEO</a><a href="/technical-seo.html"><i class="fas fa-gears" aria-hidden="true"></i>Technical SEO</a><a href="/local-seo.html"><i class="fas fa-location-dot" aria-hidden="true"></i>Local SEO</a><a href="/link-building.html"><i class="fas fa-newspaper" aria-hidden="true"></i>Link Building & Guest Posting</a><a href="/content-writing.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>SEO Content Writing</a></div><div class="menu-col"><h4>Web Development</h4><a href="/web-development.html"><i class="fas fa-code" aria-hidden="true"></i>Web Development</a><a href="/custom-website.html"><i class="fas fa-laptop-code" aria-hidden="true"></i>Custom Website Design</a></div><div class="menu-col"><h4>Paid Ads</h4><a href="/google-ads.html"><i class="fa-brands fa-google" aria-hidden="true"></i>Google Ads</a><a href="/meta-ads.html"><i class="fa-brands fa-meta" aria-hidden="true"></i>Meta Ads</a><a href="/facebook-ads.html"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook Ads</a><a href="/instagram-ads.html"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram Ads</a><a href="/tiktok-ads.html"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok Ads</a></div></div>
+          <a href="/services.html" style="margin-top:14px;justify-content:center;background:var(--bg-tint);color:var(--brand)">View all services <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+      
+      <a class="nav-link" href="/portfolio.html">Portfolio</a>
+      <a class="nav-link" href="/about.html">About</a>
+      <a class="nav-link" href="/blog.html">Blog</a>
+      <a class="nav-link" href="/FAQs.html">FAQ</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
+      <a class="btn btn-accent mobile-cta" href="/contact.html">Get an Authority Plan</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-header" href="/contact.html">Get an Authority Plan</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </div>
-
-    <!-- Floating Contact -->
-    <div class="floating-contact">
-        <div class="contact-options">
-            <a href="https://wa.me/923074646927" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:nadeemonlin@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" class="float-btn float-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <button class="float-btn float-main" title="Contact Options">
-            <i class="fas fa-comments"></i>
-        </button>
+  </div>
+</header>
+<main>
+<section class="hero page-hero"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><b>Services</b></nav>
+  <span class="eyebrow">Services</span>
+  <h1 style="max-width:880px">Authority-first <span class="grad-text">growth services</span></h1>
+  <p class="lead">Editorial links and digital PR at the core, supported by complete SEO, websites and paid ads.</p>
+  <div class="hero-actions" style="margin-bottom:0"><a class="btn btn-accent" href="#seo">SEO</a><a class="btn btn-outline-light" href="#web">Web development</a><a class="btn btn-outline-light" href="#ads">Paid ads</a></div>
+</div></section><section class="section" id="seo"><div class="wrap">
+  <div class="section-head left"><span class="eyebrow"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i> Search (SEO)</span><h2>Search (SEO) services</h2><p>Link building and digital PR at the core, with every other SEO discipline in support.</p></div>
+  <div class="grid g-3"><a class="card reveal" href="/complete-seo.html"><div class="icon"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i></div><h3>Complete SEO</h3><p>A full SEO programme where authority building leads: editorial links and PR, supported by technical fixes, on-page work and…</p><span class="card-link">Explore Complete SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/on-page-seo.html"><div class="icon"><i class="fas fa-file-lines" aria-hidden="true"></i></div><h3>On-Page SEO</h3><p>Links work best on pages that deserve to rank. We optimise targets so every link you earn delivers maximum…</p><span class="card-link">Explore On-Page SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/off-page-seo.html"><div class="icon"><i class="fas fa-link" aria-hidden="true"></i></div><h3>Off-Page SEO</h3><p>Our core expertise: editorial links, niche edits, digital PR and brand mentions, planned from a competitor gap…</p><span class="card-link">Explore Off-Page SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/technical-seo.html"><div class="icon"><i class="fas fa-gears" aria-hidden="true"></i></div><h3>Technical SEO</h3><p>Broken pages, redirect chains and crawl waste leak authority. We fix the technical side so every link's value reaches the right…</p><span class="card-link">Explore Technical SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/local-seo.html"><div class="icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div><h3>Local SEO</h3><p>Map pack visibility built on optimised profiles, consistent citations, real reviews and links from local…</p><span class="card-link">Explore Local SEO <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/link-building.html"><div class="icon"><i class="fas fa-newspaper" aria-hidden="true"></i></div><h3>Link Building & Guest Posting</h3><p>Manual outreach and editorial placements on publications with real readers, with content, reporting and a 6-month guarantee…</p><span class="card-link">Explore Link Building & Guest Posting <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/content-writing.html"><div class="icon"><i class="fas fa-pen-nib" aria-hidden="true"></i></div><h3>SEO Content Writing</h3><p>Linkable assets, guides and data-led articles that attract links naturally, plus guest articles and on-site…</p><span class="card-link">Explore SEO Content Writing <i class="fas fa-arrow-right"></i></span></a></div>
+</div></section><section class="section section-soft" id="web"><div class="wrap">
+  <div class="section-head left"><span class="eyebrow"><i class="fas fa-code" aria-hidden="true"></i> Web Development</span><h2>Web Development services</h2><p>Websites that convert the trust your authority earns.</p></div>
+  <div class="grid g-2"><a class="card reveal" href="/web-development.html"><div class="icon alt"><i class="fas fa-code" aria-hidden="true"></i></div><h3>Web Development</h3><p>Fast, SEO-ready websites that display your press coverage, reviews and expertise, built to convert the visitors your authority…</p><span class="card-link">Explore Web Development <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/custom-website.html"><div class="icon alt"><i class="fas fa-laptop-code" aria-hidden="true"></i></div><h3>Custom Website Design</h3><p>Bespoke design that positions you as the leader in your space, with proof, press and clear paths to…</p><span class="card-link">Explore Custom Website Design <i class="fas fa-arrow-right"></i></span></a></div>
+</div></section><section class="section" id="ads"><div class="wrap">
+  <div class="section-head left"><span class="eyebrow"><i class="fas fa-bullhorn" aria-hidden="true"></i> Paid Ads</span><h2>Paid Ads services</h2><p>Paid media that amplifies your brand and captures demand.</p></div>
+  <div class="grid g-3"><a class="card reveal" href="/google-ads.html"><div class="icon amber"><i class="fa-brands fa-google" aria-hidden="true"></i></div><h3>Google Ads</h3><p>While authority builds, Google Ads capture people searching today, with tight keyword control and accurate…</p><span class="card-link">Explore Google Ads <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/meta-ads.html"><div class="icon amber"><i class="fa-brands fa-meta" aria-hidden="true"></i></div><h3>Meta Ads</h3><p>Facebook and Instagram campaigns that put your PR wins and proof in front of the right audiences, then convert…</p><span class="card-link">Explore Meta Ads <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/facebook-ads.html"><div class="icon amber"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></div><h3>Facebook Ads</h3><p>Lead and sales campaigns that use your reviews, press and proof to convert, with precise targeting and…</p><span class="card-link">Explore Facebook Ads <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/instagram-ads.html"><div class="icon amber"><i class="fa-brands fa-instagram" aria-hidden="true"></i></div><h3>Instagram Ads</h3><p>Reels, Stories and feed ads that showcase your brand's credibility and drive measurable…</p><span class="card-link">Explore Instagram Ads <i class="fas fa-arrow-right"></i></span></a><a class="card reveal" href="/tiktok-ads.html"><div class="icon amber"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></div><h3>TikTok Ads</h3><p>Native videos, creator partnerships and Spark Ads that build awareness and drive…</p><span class="card-link">Explore TikTok Ads <i class="fas fa-arrow-right"></i></span></a></div>
+</div></section><section class="section-sm"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><span class="eyebrow">Free authority plan</span><h2>See exactly how much authority you need</h2><p>We'll compare your link profile with your top competitors and send a free authority plan within 24 hours.</p></div>
+    <div class="cta-actions">
+      <a class="btn btn-accent" href="/contact.html">Get My Authority Plan <i class="fas fa-arrow-right"></i></a>
+      <a class="btn btn-outline-light" href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
     </div>
+  </div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="/" class="brand" aria-label="LinkNexa home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C026D3"/><stop offset="1" stop-color="#7E22CE"/></linearGradient></defs><path d="M24 2c12 0 22 8 22 21s-9 23-22 23S2 37 2 24 12 2 24 2Z" fill="url(#lgf)"/><path d="M21 27a5.5 5.5 0 0 0 7.8 0l4.4-4.4a5.5 5.5 0 0 0-7.8-7.8l-1.6 1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 21a5.5 5.5 0 0 0-7.8 0l-4.4 4.4a5.5 5.5 0 0 0 7.8 7.8l1.6-1.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">Link<span>Nexa</span></span><span class="brand-tag">Authority & digital PR</span></span></a>
+        <p>LinkNexa builds the authority that rankings depend on: editorial links and digital PR, backed by complete SEO, websites and paid ads.</p>
+        <div class="socials"><a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/menadeemmayo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://x.com/Nadeem_seo" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="https://t.me/Nadeemmayos" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a></div>
+        <div class="market-btns"><a href="https://www.fiverr.com/nadeem_mayo" target="_blank" rel="noopener">Hire on Fiverr</a><a href="https://upwork.com/freelancers/~01929269c0cf45d7c1" target="_blank" rel="noopener">Hire on Upwork</a></div>
+      </div>
+      <div><h4>SEO Services</h4><div class="footer-links"><a href="/complete-seo.html">Complete SEO</a><a href="/on-page-seo.html">On-Page SEO</a><a href="/off-page-seo.html">Off-Page SEO</a><a href="/technical-seo.html">Technical SEO</a><a href="/local-seo.html">Local SEO</a><a href="/link-building.html">Link Building & Guest Posting</a><a href="/content-writing.html">SEO Content Writing</a></div></div>
+      <div><h4>Web &amp; Ads</h4><div class="footer-links"><a href="/web-development.html">Web Development</a><a href="/custom-website.html">Custom Website Design</a><a href="/google-ads.html">Google Ads</a><a href="/meta-ads.html">Meta Ads</a><a href="/facebook-ads.html">Facebook Ads</a><a href="/instagram-ads.html">Instagram Ads</a><a href="/tiktok-ads.html">TikTok Ads</a></div></div>
+      <div><h4>Company</h4><div class="footer-links">
+        <a href="/about.html">About</a><a href="/portfolio.html">Portfolio</a><a href="/blog.html">Blog</a><a href="/FAQs.html">FAQ</a><a href="/contact.html">Contact</a>
+      </div></div>
+      <div><h4>Get in touch</h4>
+        <div class="footer-contact">
+          <a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope"></i>nadeemonlin@gmail.com</a>
+          <a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a>
+        </div>
+        <div class="pay"><span>PayPal</span><span>Payoneer</span><span>Wise</span><span>Visa</span><span>Mastercard</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 LinkNexa. All rights reserved.</span>
+      <nav aria-label="Legal"><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a><a href="/refund-policy.html">Refund Policy</a><a href="/sitemap.xml">Sitemap</a></nav>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/923074646927?text=Hi%20LinkNexa%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>

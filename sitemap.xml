@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://linknexa.online/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://linknexa.online/about.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
   </url>
-
-  <url>
-    <loc>https://linknexa.online/blog.html</loc>
-  </url>
-
-  <url>
-    <loc>https://linknexa.online/contact.html</loc>
-  </url>
-
   <url>
     <loc>https://linknexa.online/services.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.9</priority>
   </url>
-
+  <url>
+    <loc>https://linknexa.online/portfolio.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/contact.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/FAQs.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/privacy-policy.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/terms.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/refund-policy.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/complete-seo.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/on-page-seo.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/off-page-seo.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/technical-seo.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/local-seo.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/link-building.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/content-writing.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/web-development.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/custom-website.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/google-ads.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/meta-ads.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/facebook-ads.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/instagram-ads.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/tiktok-ads.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/blog-post-1.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/blog-post-2.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/blog-post-3.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://linknexa.online/blog.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
