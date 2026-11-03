@@ -1,10 +1,6 @@
 title: LinkNexa
-url: "https://linknexa.online"
+url: https://linknexa.online
 baseurl: ""
-
 markdown: kramdown
-
-permalink: /blog/:title/
-
 exclude:
   - README.md
